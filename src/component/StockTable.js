@@ -13,7 +13,7 @@ export default function StockTable() {
     const fetchAllStocks = async () => {
       try {
         const requests = symbols.map(async (symbol) => {
-           const apiKey = process.env.GEMINI_API_KEY;
+           const apiKey = process.env.NEXT_PUBLIC_STOCK_API_KEY;
           const res = await axios.get(
             `https://finnhub.io/api/v1/quote?symbol=${symbol}&token=${apiKey}` 
           );
