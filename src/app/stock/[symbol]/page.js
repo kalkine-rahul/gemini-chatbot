@@ -7,7 +7,7 @@ export default function StockDetailPage() {
   const params = useParams();
   const symbol = params?.symbol;
   const [stockInfo, setStockInfo] = useState(null);
-  const apiKey = process.env.GEMINI_API_KEY;
+  const apiKey = process.env.NEXT_PUBLIC_STOCK_API_KEY;
   useEffect(() => {
     const fetchStock = async () => {
       
