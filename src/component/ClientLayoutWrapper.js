@@ -16,8 +16,10 @@ export default function ClientLayoutWrapper({ children }) {
           <Landing />
           <ChatWidget />
           <MarketData />
+        
         </>
-      )}
+      )} 
+
       {children}
     </>
   );

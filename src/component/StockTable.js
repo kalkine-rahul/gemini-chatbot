@@ -18,8 +18,7 @@ export default function StockTable() {
             `https://finnhub.io/api/v1/quote?symbol=${symbol}&token=${apiKey}` 
           );
           const data = res.data;
-          console.log(data)
-
+          
           const price = data.c;
           const change = data.c - data.pc;
           const percentChange = ((change / data.pc) * 100).toFixed(2);

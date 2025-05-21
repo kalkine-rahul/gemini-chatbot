@@ -50,7 +50,7 @@ export default function ChatWidget() {
     }}
   >
     <Image
-      src="/gif-hello.gif" 
+      src="/gif-hello.gif" // replace with your actual GIF path in /public
       alt="Animated Gif"
       width={120}
       height={120}

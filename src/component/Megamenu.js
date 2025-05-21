@@ -36,12 +36,12 @@ export default function Megamenu() {
                 </a>
 
                 <a
-                  href="#"
+                  href="/market-news"
                   title=""
                   className="text-base text-white transition-all duration-200 hover:text-opacity-80"
                 >
                   {" "}
-                  Solutions{" "}
+                  Market News{" "}
                 </a>
 
                 <a

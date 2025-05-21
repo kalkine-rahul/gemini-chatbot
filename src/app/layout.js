@@ -4,6 +4,7 @@ import Footer from "@/component/Footer";
 import Megamenu from "@/component/Megamenu";
 import ClientLayoutWrapper from "@/component/ClientLayoutWrapper";
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -36,7 +37,11 @@ export default function RootLayout({ children }) {
           {children}
         </ClientLayoutWrapper>
         <Footer />
+       
       </body>
+       {/* Screener always visible */}
+       
+
     </html>
   );
 }

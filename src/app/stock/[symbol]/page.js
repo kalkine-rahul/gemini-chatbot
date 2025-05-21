@@ -21,7 +21,7 @@ export default function StockDetailPage() {
     if (symbol) {
       fetchStock();
     }
-  }, [symbol]);
+  }, [symbol, apiKey]);
 
   return (
     <div className="pt-6 px-5 text-white bg-black min-h-screen container mx-auto py-8 max-w-7xl sm:px-4 lg:px-2">
