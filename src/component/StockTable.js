@@ -4,7 +4,10 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import axios from 'axios';
 
-const symbols = ['AAPL', 'GOOGL', 'AMZN', 'MSFT', 'TSLA', 'NFLX', 'FB', 'NVDA', 'AMD', 'INTC'];
+const symbols = [ 'AAPL', 'GOOGL', 'AMZN', 'MSFT', 'TSLA', 'NFLX', 'META', 'NVDA', 'AMD', 'INTC',
+    'BABA', 'CRM', 'UBER', 'DIS', 'PYPL', 'ADBE', 'ORCL', 'PEP', 'KO', 'NKE',
+    'BA', 'WMT', 'COST', 'T', 'VZ', 'QCOM', 'CSCO', 'JNJ', 'PFE', 'XOM',
+    'CVX'];
 
 export default function StockTable() {
   const [stockData, setStockData] = useState([]);
@@ -44,7 +47,7 @@ export default function StockTable() {
   return (
     <>
       {/* Marquee */}
-       <h2 className="text-2xl text-amber-700 font-bold py-5">Current Market Data</h2>
+       <h2 className="text-2xl text-black font-bold py-5">Current Market Data</h2>
       <div className="overflow-hidden whitespace-nowrap bg-black text-white py-2 border-y border-green-400">
         <div className="animate-marquee inline-block">
           {stockData.map((stock) => (
@@ -60,7 +63,7 @@ export default function StockTable() {
 
       {/* Table */}
       <div className="overflow-x-auto">
-  <table className="min-w-full  text-white rounded-lg">
+  <table className="min-w-full text-white rounded-lg">
   <thead>
     <tr>
       <th className="px-6 py-3 text-left border-b border-green-700 text-amber-600 text-xl">Symbol</th>
