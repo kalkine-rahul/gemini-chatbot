@@ -1,14 +1,15 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Megamenu() {
   return (
     <>
-      <div className="relative bg-transparent">
-        <header className=" inset-x-0 top-0 z-10 w-full">
+      <div className="relative">
+        <header className="inset-x-0 top-0 z-10 w-full">
           <div className="px-4 mx-auto sm:px-6 lg:px-8">
-            <div className="flex items-center h-16 lg:h-20 justify-between">
+            <div className="flex items-center h-16 lg:h-20 justify-between bg-black/50 backdrop-blur-sm rounded-lg shadow-lg">
               <div className="flex-shrink-0">
-                <a href="#" title="" className="flex">
+                <Link href="/" title="" className="flex">
                   <h5
                     className="w-auto font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-[#00ec82] to-[#6679db] lg:text-2xl"
                     style={{
@@ -21,7 +22,7 @@ export default function Megamenu() {
                   >
                     BullsEye
                   </h5>
-                </a>
+                </Link>
               </div>
               <div className="ml-3"></div>
 

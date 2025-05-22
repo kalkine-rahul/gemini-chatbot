@@ -30,7 +30,7 @@ export default function ChatWidget() {
         height: "500px",
         boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
         borderRadius: "10px",
-        backgroundColor: "white",
+        backgroundColor: "#dcf2f7",
         zIndex: 1000,
         display: "flex",
         flexDirection: "column",
