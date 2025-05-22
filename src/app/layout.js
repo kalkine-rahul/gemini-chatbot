@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "@/component/Footer";
 import Megamenu from "@/component/Megamenu";
 import ClientLayoutWrapper from "@/component/ClientLayoutWrapper";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 const geistSans = Geist({
@@ -35,6 +36,7 @@ export default function RootLayout({ children }) {
         <Megamenu />
         <ClientLayoutWrapper>
           {children}
+            <SpeedInsights />
         </ClientLayoutWrapper>
         <Footer />
        
