@@ -11,7 +11,7 @@ export default function Landing() {
           loop
           muted
           playsInline
-          className="w-full object-fill"
+          className="w-full object-fill outline-0 from-transparent"
         ></video>
         <div className="absolute inset-0"></div>
       </div>

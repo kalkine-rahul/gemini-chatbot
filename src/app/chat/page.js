@@ -27,7 +27,7 @@ export default function ChatPage() {
   };
 
   return (
-    <div className="max-w-2xl mx-auto p-4">
+    <div className="max-w-2xl p-4">
       <h1 className="text-2xl text-blue-600/100 dark:text-sky-400/100 mb-4">
         Ask Your Questions
       </h1>
