@@ -1,20 +1,12 @@
-import { Geist, Geist_Mono } from "next/font/google";
+// app/layout.js
+
 import "./globals.css";
 import Footer from "@/component/Footer";
 import Megamenu from "@/component/Megamenu";
 import ClientLayoutWrapper from "@/component/ClientLayoutWrapper";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "BullsEye",
@@ -28,22 +20,26 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 
+
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+       
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/motion-tailwind.css"/>
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className="bg-black text-black "
       >
         <Megamenu />
         <ClientLayoutWrapper>
           {children}
-            <SpeedInsights />
+          <SpeedInsights />
         </ClientLayoutWrapper>
-        <Footer />
        
+         <Footer />
+        
       </body>
-       {/* Screener always visible */}
-       
-
     </html>
   );
 }
+

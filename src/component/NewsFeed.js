@@ -49,16 +49,17 @@ const NewsFeed = () => {
   return (
     <div className="p-6  min-h-screen">
     <div className="flex flex-row items-center text-center p-2">
-       <Image className="w-24 h-24 object-cover rounded-lg mb-6"
+       <Image className="w-12 h-12 object-cover rounded-lg mb-6"
         src="/news-report.webp"
         alt="News Report"
         width={100}
         height={100}
         unoptimized={true}
       />
-      <h2 className="text-2xl font-bold mb-6 text-white ">
-          Latest Market News
-      </h2>
+      <h2 className="text-2xl font-bold mb-6 ml-1 text-black dark:text-white">
+  Latest Market News
+</h2>
+
     </div>
      
 
