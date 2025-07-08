@@ -52,8 +52,9 @@ export default function NewsSentimentPage() {
   };
 
   return (
-    <div className="p-6 space-y-6 max-w-3xl mx-auto">
-      <div className="flex gap-2">
+  <div className="bg-blue-950 pt-24 px-4 md:px-8 min-h-screen"> {/* Added pt-24 here */}
+      {/* Header - Now appears below the fixed menu */}
+      <div className="flex items-center mb-8">
         <input
           className=" p-2 flex-1 text-white px-4 py-2 rounded border-white border-2  transition-colors"
           value={query}

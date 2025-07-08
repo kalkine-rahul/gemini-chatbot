@@ -1,15 +1,36 @@
-// components/DummyAd.tsx
-export default function DummyAds() {
+// components/DummyAds.js
+import { FaChartBar, FaBookmark, FaDollarSign } from "react-icons/fa";
+
+const DummyAds = ({ variant = "default" }) => {
+  const ads = {
+    default: [
+      { title: "Market Trends Report", icon: <FaChartBar /> },
+      { title: "Investment Guide", icon: <FaBookmark /> }
+    ],
+    insights: [
+      { title: "Sector Analysis", icon: <FaChartBar /> },
+      { title: "Economic Outlook", icon: <FaDollarSign /> }
+    ],
+    recommended: [
+      { title: "Must-Read Articles", icon: <FaBookmark /> },
+      { title: "Editor's Picks", icon: <FaBookmark /> }
+    ]
+  };
+
   return (
-    <div className="w-full h-64 bg-white border border-dashed border-gray-400 rounded-lg shadow-sm flex flex-col items-center justify-center text-gray-500 text-sm p-4">
-        
-      <div className="w-full h-6 bg-gray-200 mb-4 rounded animate-pulse"></div>
-      <div className="w-3/4 h-4 bg-gray-200 mb-2 rounded animate-pulse"></div>
-      <div className="w-2/3 h-4 bg-gray-200 mb-4 rounded animate-pulse"></div>
-      <div className="w-full h-8 bg-blue-300 rounded animate-pulse text-center text-white">
-        &nbsp;
-      </div>
-      <p className="mt-4 text-xs text-gray-400">Ad Placeholder</p>
+    <div className="space-y-4">
+      {ads[variant].map((ad, index) => (
+        <div key={index} className="p-3 bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 transition-colors">
+          <div className="flex items-center">
+            <div className="bg-blue-100 p-2 rounded-full mr-3 text-blue-600">
+              {ad.icon}
+            </div>
+            <span className="text-sm font-medium text-gray-700">{ad.title}</span>
+          </div>
+        </div>
+      ))}
     </div>
   );
-}
+};
+
+export default DummyAds;

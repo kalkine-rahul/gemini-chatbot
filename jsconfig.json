@@ -1,7 +1,9 @@
+// jsconfig.json
 {
   "compilerOptions": {
+    "baseUrl": "src",              // Required to use "@/..."
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["*"]                 // Makes "@/component/..." map to "src/component/..."
     }
   }
 }

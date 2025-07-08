@@ -7,7 +7,6 @@ import ClientLayoutWrapper from "@/component/ClientLayoutWrapper";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 
-
 export const metadata = {
   title: "BullsEye",
   icons: {
@@ -20,12 +19,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 
-
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
        
          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/motion-tailwind.css"/>
+   
       </head>
       <body
         className="bg-black text-black "

@@ -1,4 +1,6 @@
 @import "tailwindcss";
+
+
 * {
   scrollbar-width: thin;
   scrollbar-color: var(--secondary) var(--primary);
@@ -119,3 +121,11 @@ body {
 
 
 
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
