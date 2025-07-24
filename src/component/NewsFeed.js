@@ -130,7 +130,7 @@ const NewsFeed = () => {
             <div className="text-center mt-8 mb-5">
               <button
                 onClick={loadMore}
-                className="px-6 py-2 bg-white border border-b-blue-950 rounded-md text-gray-700 hover:bg-gray-50 transition-colors"
+                className="px-6 py-2 border rounded-md text-black"
               >
                 Load More News
               </button>

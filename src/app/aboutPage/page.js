@@ -2,14 +2,14 @@
 const AboutPage = () => {
   const skills = [
     { category: 'Frontend', items: ['React', 'Next.js', 'Tailwind CSS', 'JavaScript', 'HTML5', 'CSS3'] },
-    { category: 'Data Visualization', items: ['D3.js', 'Chart.js', 'Recharts', 'Highcharts'] },
-    { category: 'Backend', items: ['Node.js', 'Express', 'MongoDB', 'SQL'] },
+    { category: 'Data Visualization', items: ['D3.js', 'Chart.js', 'Highcharts'] },
+    { category: 'Backend', items: ['Node.js', 'Python', 'Django', 'Express', 'MongoDB', 'SQL'] },
     { category: 'DevOps & Tools', items: ['Git', 'GitLab', 'AWS', 'Jira', 'Agile Methodologies'] },
   ];
 
   const experience = [
     {
-      role: "Senior Frontend Developer",
+      role: "Frontend Developer",
       company: "Current Company",
       period: "2021 - Present",
       achievements: [
@@ -19,7 +19,7 @@ const AboutPage = () => {
       ]
     },
     {
-      role: "Frontend Developer",
+      role: "Associate Software Engineer",
       company: "Previous Company",
       period: "2019 - 2021",
       achievements: [
@@ -32,22 +32,22 @@ const AboutPage = () => {
 
   const projects = [
     {
-      title: "Financial Dashboard",
-      description: "Interactive dashboard with real-time data visualization using D3.js and React",
-      technologies: ['React', 'D3.js', 'Next.js', 'Tailwind CSS'],
-      link: "#"
+      title: "Kalkine Financial Platforms (AU/CA/NZ/IN/UK/US)",
+      description: "Worked as a Frontend Developer on Kalkine’s Australian and Canadian platforms — dynamic financial websites offering market research, stock insights, and investment news. Contributed to building responsive interfaces, enhancing user experience, and implementing interactive components using modern HTML, CSS, JavaScript, and Bootstrap practices. Focused on optimizing performance, mobile responsiveness, and ensuring design consistency across both regional versions.",
+      technologies: ['React', 'D3.js', 'Next.js', 'Tailwind CSS', 'Python', 'Bootstrap 5'],
+      link: "https://kalkine.com.au/"
     },
     {
-      title: "E-commerce Platform",
-      description: "Full-stack e-commerce solution with payment integration",
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      link: "#"
+      title: "GRC Platform",
+      description: "A comprehensive full-stack Governance, Risk, and Compliance (GRC) application designed to help organizations manage regulatory policies, risk assessments, audit trails, and compliance workflows. Built using React for dynamic front-end interfaces and Node.js with MongoDB for a scalable backend. Integrated secure payment systems and role-based access control. Followed Agile methodology using Jira for sprint planning and issue tracking, with a strong focus on reusable design patterns and UI consistency via Material UI.",
+      technologies: ['React', 'Node.js', 'MongoDB', 'Meterial UI' , 'Jira', 'Agile', "Design Pattern"],
+      link: ""
     },
     {
       title: "Email Template System",
       description: "Responsive email templates compatible with all major clients",
-      technologies: ['HTML', 'CSS', 'MJML'],
-      link: "#"
+      technologies: ['HTML', 'CSS'],
+      link: ""
     }
   ];
 
@@ -60,18 +60,18 @@ const AboutPage = () => {
           <div className="md:w-1/3">
             <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-indigo-500 mx-auto">
               <img 
-                src="/profile.jpg" 
+              src="./profilemine.jpg"
                 alt="Profile" 
                 className="w-full h-full object-cover"
               />
             </div>
           </div>
           <div className="md:w-2/3">
-            <h1 className="text-4xl font-bold text-white-800 mb-4">Hi, I'm Rahul Kumar</h1>
-            <h2 className="text-2xl text-indigo-600 mb-6">Senior Front End Developer</h2>
+            <h1 className="text-4xl font-bold text-white-800 mb-4">Hi, I am Rahul Kumar</h1>
+            <h2 className="text-2xl text-blue-200 mb-6">Front End Developer</h2>
             <p className="text-lg text-white-600 mb-6">
-              With 3.5+ years of experience building modern web applications, I specialize in React, Next.js, 
-              and data visualization. I'm passionate about creating intuitive, performant user experiences 
+              With 3.6+ years of experience building modern web applications, I specialize in React, Next.js, 
+              and data visualization. I am passionate about creating intuitive, performant user experiences 
               with clean, maintainable code.
             </p>
             <div className="flex gap-4">
@@ -82,9 +82,9 @@ const AboutPage = () => {
                 Contact Me
               </a>
               <a 
-                href="/resume.pdf" 
+                href="./Rahul_Resume_.pdf" 
                 download
-                className="px-6 py-3 border border-indigo-600 text-indigo-600 rounded-lg  transition"
+                className="px-6 py-3 border border-indigo-600 text-indigo-600 rounded-lg  transition bg-amber-50"
               >
                 Download Resume
               </a>
@@ -215,7 +215,7 @@ const AboutPage = () => {
             </div>
             <button 
               type="submit" 
-              className="px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition"
+              className="px-6 py-3 bg-indigo-600 rounded-lg hover:bg-indigo-700 transition text-blue-200 border"
             >
               Send Message
             </button>
