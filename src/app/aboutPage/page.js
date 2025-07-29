@@ -11,7 +11,7 @@ const AboutPage = () => {
     {
       role: "Frontend Developer",
       company: "Current Company",
-      period: "2021 - Present",
+      period: "Sep 2023 - Present",
       achievements: [
         "Led development of 10+ React applications with Next.js",
         "Created interactive dashboards with D3.js improving data visibility by 40%",
@@ -21,7 +21,7 @@ const AboutPage = () => {
     {
       role: "Associate Software Engineer",
       company: "Previous Company",
-      period: "2019 - 2021",
+      period: "Dec 2021- Aug 2023",
       achievements: [
         "Developed responsive web applications serving 50k+ monthly users",
         "Built reusable component library saving 100+ development hours",
