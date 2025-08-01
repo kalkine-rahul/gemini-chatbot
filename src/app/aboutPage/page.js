@@ -57,7 +57,7 @@ const AboutPage = () => {
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Hero Section */}
         <section className="flex flex-col md:flex-row items-center gap-8 mb-16">
-          <div className="md:w-1/3">
+          <div className="md:w-1/3 py-12">
             <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-indigo-500 mx-auto">
               <img 
               src="./profilemine.jpg"
